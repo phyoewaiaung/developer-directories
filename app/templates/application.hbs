@@ -4,4 +4,40 @@
   <SentMessage />
 
   <NewMessageInput />
+
+<BlogPost 
+  @post={{hash 
+    title="Test Title" 
+    author="Author Name" 
+    body="Post body here"
+  }} 
+  as |postTitle postAuthor postBody|
+>
+ {{!-- <p>Ok this is before </p> --}}
+
+  {{!-- <p>{{postTitle}}</p>
+  <p>{{postAuthor}}</p>
+  <p>{{postBody}}</p> --}}
+
+</BlogPost>
+
 </div>
+
+{{!-- 
+<Popover>
+  <:trigger as |open|>
+    <button type="button">Click to {{if open "close" "open"}}  the popover!</button>
+  </:trigger>
+  <:content>
+     This is what is shown when I'm opened!
+  </:content>
+</Popover>
+
+<Card>
+    <:title>
+        <h2>Card Title</h2>
+    </:title>
+    <:default>
+        <p>Content</p>
+    </:default>
+</Card> --}}
